@@ -1,8 +1,8 @@
-import Features from "../components/Features"
+
 
 const Home = () => {
   return (
-    <div><Features/></div>
+    <div>Home</div>
   )
 }
 
