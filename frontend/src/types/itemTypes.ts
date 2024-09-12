@@ -13,3 +13,4 @@ export interface itemTypes {
   minWeight: number;
   rating: number;
 }
+
