@@ -17,7 +17,7 @@ const userSchema = new mongoose.Schema({
   password: {
     type: String,
     required: [true, "Please enter your password"],
-    min: [8, "Password must be at 8 characters"],
+    minlength: [8, "Password must be at 8 characters"],
     select: false,
   },
   passwordConfirm: {
@@ -42,7 +42,7 @@ userSchema.pre("save", async function (next) {
 });
 
 userSchema.pre("save", function (next) {
-  if (!this.isModified("password" || this.isNew)) return next();
+  if (!this.isModified("password") || this.isNew) return next();
   this.passwordChangedAt = Date.now() - 1000;
   next();
 });
