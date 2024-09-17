@@ -30,6 +30,11 @@ const userSchema = new mongoose.Schema({
       message: "password must be same as passwordConfirm",
     },
   },
+  role: {
+    type: String,
+    enum: ["admin", "customer", "shopkeeper"],
+    default: "customer",
+  },
   photo: String,
   passwordChangedAt: Date,
 });
