@@ -23,12 +23,12 @@ const Contact = () => {
     console.log(data)
   }
   return (
-    <div className="min-h-screen bg-green-50 py-12 px-4 sm:px-6 lg:px-8">
+    <div className=" bg-green-50 pt-32 pb-6 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-4xl font-bold text-center text-green-800 mb-12">Contact Fresh BuyBazaar</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          {/* Map and Contact Info */}
+         
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
             <div className="h-64">
               <MapContainer

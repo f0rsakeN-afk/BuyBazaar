@@ -1,6 +1,5 @@
-import React from 'react';
 import { useForm } from "react-hook-form";
-import { FaAppleAlt, FaCarrot, FaWeightHanging, FaPercent, FaStar, FaImage } from 'react-icons/fa';
+import { FaAppleAlt, FaWeightHanging, FaPercent, FaStar, FaImage } from 'react-icons/fa';
 import { MdDescription, MdCategory, MdAttachMoney, MdGrade } from 'react-icons/md';
 
 const CreateItem = () => {
@@ -10,7 +9,7 @@ const CreateItem = () => {
     };
 
     return (
-        <div className="container mx-auto px-4 py-32 bg-green-50 relative overflow-hidden">
+        <div className="container mx-auto px-4 py-32  relative overflow-hidden">
             <h2 className="text-3xl font-bold text-green-800 mb-6 fade-in-up">Add New Item</h2>
             <form onSubmit={handleSubmit(onSubmit)} className="bg-white shadow-md rounded-lg p-6 scale-in">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

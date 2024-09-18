@@ -19,7 +19,8 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 3000,
-        cssEase: 'linear'
+        cssEase: 'linear',
+        dotsClass: "slick-dots"
     }
     return (
         <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

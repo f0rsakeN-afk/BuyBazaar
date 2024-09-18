@@ -1,10 +1,10 @@
-import React from 'react'
 
-type Props = {}
 
-const Shop = (props: Props) => {
+const Shop = () => {
   return (
-    <div>Shop</div>
+    <div className="py-32">
+      
+    </div>
   )
 }
 

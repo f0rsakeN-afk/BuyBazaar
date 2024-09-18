@@ -9,6 +9,9 @@ import Contact from "./pages/Contact"
 import Cart from "./pages/Cart"
 import About from "./pages/About"
 import Account from "./pages/Account"
+import Item from "./components/Item"
+import ItemDetails from './components/ItemDetails'
+import CreateItem from "./pages/CreateItem"
 
 const App = () => {
   return (
@@ -21,7 +24,10 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/item" element={<Item />} />
+          <Route path="/itemdetails" element={<ItemDetails />} />
           <Route path="/user/:id" element={<Account />} />
+          <Route path="/createItem" element={<CreateItem />} />
         </Route>
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />

@@ -1,8 +1,14 @@
-
+import Loader from "../components/Loader"
+import Services from '../components/Services'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div className="container m-auto">
+      {0 ? <Loader /> : <>
+        <Services />
+
+      </>}
+    </div>
   )
 }
 

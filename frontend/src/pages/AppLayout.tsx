@@ -4,7 +4,7 @@ import Footer from '../components/Footer'
 
 const AppLayout = () => {
     return (
-        <div className='flex flex-col min-h-screen'>
+        <div className='flex flex-col min-h-screen bg-[#E6F3FF]'>
             <Navbar />
             <main className='flex-grow'>
                 <Outlet />
@@ -14,4 +14,4 @@ const AppLayout = () => {
     )
 }
 
-export default AppLayout
+export default AppLayout;
