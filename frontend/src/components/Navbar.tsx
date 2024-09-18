@@ -17,7 +17,7 @@ const icons: IconItem[] = [
 
 const Navbar = () => {
     return (
-        <nav className="bg-white shadow-md">
+        <nav className="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
             <div className="container mx-auto px-4 py-3">
                 <div className="flex items-center justify-between">
                     <Logo />
@@ -53,6 +53,22 @@ const Navbar = () => {
                             </NavLink>
                         ))}
                     </div>
+                </div>
+                <div className="floating-fruits">
+                    {['🍎', '🍐', '🍊', '🍋', '🍌', '🍉', '🍇', '🍓', '🫐', '🍒', '🥕', '🥦'].map((fruit, index) => (
+                        <span
+                            key={index}
+                            className="fruit z-50"
+                            style={{
+                                left: `${Math.random() * 100}%`,
+                                animationDelay: `${Math.random() * 5}s`,
+                                animationDuration: `${5 + Math.random() * 5}s`,
+                                animationName: index % 2 === 0 ? 'floatUp' : 'floatDown'
+                            }}
+                        >
+                            {fruit}
+                        </span>
+                    ))}
                 </div>
             </div>
         </nav>
