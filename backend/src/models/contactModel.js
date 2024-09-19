@@ -10,7 +10,7 @@ const contactSchema = new mongoose.Schema({
     type: String,
     required: [true, "An email is required"],
     validate: {
-      validator: [validator.isEmail],
+      validator: validator.isEmail,
       message: "Please provide a valid email address",
     },
   },
@@ -24,6 +24,6 @@ const contactSchema = new mongoose.Schema({
   },
 });
 
-const ContactForm = mongoose.model("contact", contactSchema);
+const ContactForm = mongoose.model("contacts", contactSchema);
 
 module.exports = ContactForm;
