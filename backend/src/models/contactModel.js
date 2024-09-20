@@ -9,10 +9,6 @@ const contactSchema = new mongoose.Schema({
   email: {
     type: String,
     required: [true, "An email is required"],
-    validate: {
-      validator: validator.isEmail,
-      message: "Please provide a valid email address",
-    },
   },
   message: {
     type: String,
